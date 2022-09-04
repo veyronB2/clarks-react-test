@@ -1,8 +1,8 @@
 import React from "react";
 
-const Button = ({ name }) => {
+const Button = ({ name, classValue }) => {
   return (
-    <a className="btn collection-shop-btn" href="#">
+    <a className={`btn ${classValue}`} href="#">
       {name}
     </a>
   );

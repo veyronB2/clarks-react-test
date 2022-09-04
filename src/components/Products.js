@@ -1,8 +1,21 @@
 import React from "react";
 import products from "../data/products";
 import ProductItem from "./ProductItem";
+import { useEffect, useState } from "react";
+
+const initialState = { products: [] };
 
 const Products = () => {
+  const [state, setState] = useState(initialState, []);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  function fetchData() {
+    setState(products);
+  }
+
   return (
     <section className="mainbody__products">
       <p className="mainbody__title-text">

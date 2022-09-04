@@ -12,7 +12,7 @@ const ProductItem = ({ image, name, colour, desc }) => {
           <p>{desc}</p>
         </div>
       </div>
-      <Button name={`shop ${name}`} />
+      <Button name={`shop ${name}`} classValue="product-btn" />
     </div>
   );
 };

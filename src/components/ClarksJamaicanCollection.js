@@ -20,8 +20,8 @@ const ClarksJamaicanCollection = () => {
           </p>
         </div>
         <div className="mainbody__collection-btn-container">
-          <Button name="shop mens" />
-          <Button name="shop womens" />
+          <Button name="shop mens" classValue="collection-shop-btn" />
+          <Button name="shop womens" classValue="collection-shop-btn" />
         </div>
       </div>
     </section>

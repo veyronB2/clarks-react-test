@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../components/Button";
+import Link from "./Link";
 
 const ProductItem = ({ image, name, colour, desc }) => {
   return (
@@ -8,11 +8,11 @@ const ProductItem = ({ image, name, colour, desc }) => {
         <img src={image} alt={name} />
         <div className="product-text">
           <h2>{name}</h2>
-          <h4>{colour}</h4>
+          <h3>{colour}</h3>
           <p>{desc}</p>
         </div>
       </div>
-      <Button name={`shop ${name}`} classValue="product-btn" />
+      <Link name={`shop ${name}`} nameClass="product-btn" />
     </div>
   );
 };

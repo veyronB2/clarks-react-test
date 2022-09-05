@@ -1,14 +1,14 @@
 import React from "react";
-import Button from "./Button";
+import Link from "./Link";
 
 const ClarksJamaicanCollection = () => {
   return (
     <section className="mainbody__collection">
       <div className="mainbody__wrapper">
-        <h2 className="mainbody__collection-title">
+        <h1 id="mainbody__collection-title">
           clarks and jamaica: a collection <br />
           inspired by the island
-        </h2>
+        </h1>
         <div className="mainbody__collection-text">
           <p>
             Since they first hit the street of Kingston, our profile have
@@ -20,8 +20,8 @@ const ClarksJamaicanCollection = () => {
           </p>
         </div>
         <div className="mainbody__collection-btn-container">
-          <Button name="shop mens" classValue="collection-shop-btn" />
-          <Button name="shop womens" classValue="collection-shop-btn" />
+          <Link name="shop mens" nameClass="collection-shop-btn" />
+          <Link name="shop womens" nameClass="collection-shop-btn" />
         </div>
       </div>
     </section>

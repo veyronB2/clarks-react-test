@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const initialState = { productsData: [] };
 
-const useStateControl = () => {
+const useProducts = () => {
   const [state, setState] = useState(initialState);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const useStateControl = () => {
 };
 
 const Products = () => {
-  const { productsData } = useStateControl();
+  const { productsData } = useProducts();
   return (
     <section className="mainbody__products">
       <p className="mainbody__title-text">
